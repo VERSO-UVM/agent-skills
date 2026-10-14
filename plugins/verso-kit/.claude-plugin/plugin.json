@@ -1,0 +1,18 @@
+{
+  "name": "verso-kit",
+  "version": "0.1.0",
+  "description": "Team workflows for branches, PRs, CI, merge conflicts, verification, cleanup, and work summaries. Adapted from cursor-team-kit.",
+  "author": {
+    "name": "VERSO / UVM"
+  },
+  "homepage": "https://github.com/VERSO-UVM/agent-skills/tree/main/plugins/verso-kit",
+  "repository": "https://github.com/VERSO-UVM/agent-skills",
+  "license": "MIT",
+  "keywords": [
+    "pr",
+    "ci",
+    "review",
+    "verification",
+    "team"
+  ]
+}

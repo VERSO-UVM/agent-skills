@@ -1,0 +1,21 @@
+{
+  "name": "verso-agent-skills",
+  "owner": {
+    "name": "VERSO / UVM"
+  },
+  "metadata": {
+    "description": "VERSO's harness-agnostic agent skills"
+  },
+  "plugins": [
+    {
+      "name": "verso-kit",
+      "source": "plugins/verso-kit",
+      "description": "Team workflows for branches, PRs, CI, merge conflicts, verification, cleanup, and work summaries. Adapted from cursor-team-kit."
+    },
+    {
+      "name": "pstack",
+      "source": "plugins/pstack",
+      "description": "if you want to go fast, go deep first. Rigorous agent workflows (poteto-mode), engineering principles, and review skills. Vendored from cursor/plugins, harness-neutral."
+    }
+  ]
+}
