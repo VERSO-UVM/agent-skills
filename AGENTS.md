@@ -29,3 +29,35 @@ Use these substitutions when bringing in skills written for a single harness (mo
 | `is_background`, `model: fast` agent frontmatter | drop |
 
 Keep attribution to upstream authors. Port the meaning, not just the words, and keep edits minimal so upstream changes stay easy to merge (see `UPSTREAM.md`).
+
+## AI use and compliance
+
+This repo follows UVM's [AI guidance](https://www.uvm.edu/ai/university-wide-ai-guidance) and [approved AI tools list](https://www.uvm.edu/ai/supported-and-approved-ai-tools). You are responsible for anything an AI tool produces for you here.
+
+**Data classification:** Public (Low Risk). This repo is public on GitHub, so put nothing here you would not post publicly. Levels are defined in the UVM [Data Classification Matrix](https://www.uvm.edu/d10-files/documents/2025-07/Data_Risk_Classification_Matrix.pdf).
+
+**Approved tools and the data they may see:**
+
+| Tool | Data allowed |
+|:--|:--|
+| Claude, UVM license, signed in with your UVM account | Low to Moderate Risk. High Risk only after consulting iso@uvm.edu. Do not use a personal Claude account. |
+| Microsoft Copilot, signed in with your NetID | Low to High Risk |
+| Tools without a UVM license (personal ChatGPT, Claude, Gemini, and similar) | Public data only. Any other use needs UVM Contract Review. |
+
+**Agent permissions:** Agents may propose edits. A human reviews each change before it is committed; after that review, the agent or the human may commit. All changes go through git, so they are logged and can be undone.
+
+**Verification:** Check AI output before you act on it. Every claim an AI adds must cite a source in the document's Evidence section. If a claim can't be verified, remove it or mark it as uncertain.
+
+**Disclosure:** If AI helped with a commit, the commit message says so.
+
+**Downstream use:** Never move content into a tool approved for a lower risk level. For example, text from a VERSO staff Microsoft 365 Copilot digest must not go into a personal AI account or into this public repo.
+
+**When unsure:** Stop and ask Kendall about data or tools. Send policy questions to iso@uvm.edu.
+
+### Evidence
+
+Retrieved 2026-10-15.
+
+- [UVM university-wide AI guidance](https://www.uvm.edu/ai/university-wide-ai-guidance): users are responsible for outputs, review before acting, disclosure, downstream use, safeguards for autonomous systems.
+- [UVM supported and approved AI tools](https://www.uvm.edu/ai/supported-and-approved-ai-tools): tools, risk levels, personal Claude accounts, Contract Review, iso@uvm.edu.
+- [UVM Data Classification Matrix](https://www.uvm.edu/d10-files/documents/2025-07/Data_Risk_Classification_Matrix.pdf): data risk levels.
