@@ -1,0 +1,22 @@
+{
+  "name": "academic-oss",
+  "version": "1.0.0",
+  "description": "Take an academic research repository from closed to open source: secrets/PII scan, readiness scorecard, citation integrity (DOIs, CITATION.cff, codemeta), research README, and a phased migration plan.",
+  "author": {
+    "name": "VERSO / UVM"
+  },
+  "homepage": "https://github.com/VERSO-UVM/agent-skills/tree/main/plugins/academic-oss",
+  "repository": "https://github.com/VERSO-UVM/agent-skills",
+  "license": "MIT",
+  "keywords": [
+    "open-source",
+    "research",
+    "citation",
+    "doi",
+    "secrets",
+    "fair"
+  ],
+  "displayName": "academic-oss",
+  "category": "developer-tools",
+  "skills": "./skills/"
+}

@@ -4,7 +4,7 @@
     "name": "VERSO / UVM"
   },
   "metadata": {
-    "description": "VERSO's harness-agnostic agent skills: pstack (poteto-mode) and verso-kit team workflows"
+    "description": "VERSO's harness-agnostic agent skills: pstack (poteto-mode), verso-kit team workflows, and academic-oss research open-sourcing"
   },
   "plugins": [
     {
@@ -16,6 +16,11 @@
       "name": "pstack",
       "source": "./plugins/pstack",
       "description": "if you want to go fast, go deep first. Rigorous agent workflows (poteto-mode), engineering principles, and review skills. Vendored from cursor/plugins, harness-neutral."
+    },
+    {
+      "name": "academic-oss",
+      "source": "./plugins/academic-oss",
+      "description": "Take an academic research repository from closed to open source: secrets/PII scan, readiness scorecard, citation integrity (DOIs, CITATION.cff, codemeta), research README, and a phased migration plan."
     }
   ]
 }
