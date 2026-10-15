@@ -6,6 +6,7 @@ Shared skills for software and agentic coding work at VERSO. They follow the ope
 |:--|:--|
 | [`pstack`](plugins/pstack/) | `/poteto-mode`, a rigorous working style: plan before code, verify before "done", parallel subagents. Includes ~50 skills such as `sharpen`, `how`, `why`, `blast-radius`, `interrogate`, `unslop`, `technical-writing`, `teach`, and the `principle-*` engineering principles. |
 | [`verso-kit`](plugins/verso-kit/) | Team workflow: `new-branch-and-pr`, `review-and-ship`, `make-pr-easy-to-review`, `get-pr-comments`, `fix-ci`, `loop-on-ci`, `fix-merge-conflicts`, `verify-this`, `deslop`, `control-cli`, `control-ui`, `what-did-i-get-done`, `weekly-review`. |
+| [`academic-oss`](plugins/academic-oss/) | Taking a research repository from closed to open source: `secrets-scan`, `assess-readiness`, `citation-check` (DOIs, CITATION.cff, codemeta), `readme-gen`, `open-source-plan`. |
 
 ## Install
 
@@ -17,11 +18,12 @@ Install once per machine. You don't need to clone this repo.
 /plugin marketplace add VERSO-UVM/agent-skills
 /plugin install pstack@verso-agent-skills
 /plugin install verso-kit@verso-agent-skills
+/plugin install academic-oss@verso-agent-skills
 ```
 
 Update later with `/plugin marketplace update verso-agent-skills`.
 
-**Cursor**: add `VERSO-UVM/agent-skills` as a plugin marketplace in Cursor's plugin settings, then install `pstack` and `verso-kit`.
+**Cursor**: add `VERSO-UVM/agent-skills` as a plugin marketplace in Cursor's plugin settings, then install `pstack`, `verso-kit`, and `academic-oss`.
 
 **Codex, Gemini CLI, and other agents**: use the cross-agent [skills CLI](https://github.com/vercel-labs/skills), which knows where each agent looks for skills:
 
@@ -43,7 +45,8 @@ Commit this as `.claude/settings.json` in a project. Collaborators who open it i
   },
   "enabledPlugins": {
     "pstack@verso-agent-skills": true,
-    "verso-kit@verso-agent-skills": true
+    "verso-kit@verso-agent-skills": true,
+    "academic-oss@verso-agent-skills": true
   }
 }
 ```
@@ -54,4 +57,4 @@ Read [`AGENTS.md`](AGENTS.md) for how to write harness-neutral skills, and run `
 
 ## License
 
-MIT (see [`LICENSE`](LICENSE)). Most skills are adapted from [cursor/plugins](https://github.com/cursor/plugins) (MIT, © Cursor); see each plugin's `LICENSE`.
+MIT (see [`LICENSE`](LICENSE)). `academic-oss` is VERSO's own (© VERSO / ORCA, UVM). Most other skills are adapted from [cursor/plugins](https://github.com/cursor/plugins) (MIT, © Cursor); see each plugin's `LICENSE`.
